@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("Результаты: ");
         for (TestLogParser.TestResult testResult : parseResult.results()) {
-            System.out.println("  " + testResult.name() + " — " + testResult.status() + " (" + testResult.durationMs() + ")");
+            System.out.println("  " + testResult.name() + " — " + testResult.status() + " (" + testResult.durationMs() + "ms)");
         }
 
         System.out.println("Битые строки: " + parseResult.errors());
